@@ -296,7 +296,7 @@ export function useAuthRedirect(onToken: (token: string | null) => void) {
     // anyways
     if (triggeredReload) return;
 
-    if (!window.location.hash.includes("id_token=")) {
+    if (!window.location.hash.includes("id_token=") && !window.location.hash.includes("code=")) {
       onToken(null);
       return;
     }
