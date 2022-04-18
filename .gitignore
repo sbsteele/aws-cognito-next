@@ -1,5 +1,4 @@
 *.log
-dist/
 .DS_Store
 node_modules
 pems.json
